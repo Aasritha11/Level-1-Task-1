@@ -1,0 +1,53 @@
+.people {
+  background-color: #3498db; /* changed to a blue color */
+  padding: 50px 0;
+}
+
+.people .persons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.people .persons .person-1,
+.people .persons .person-2 {
+  text-align: center;
+  width: 45%;
+  margin-bottom: 50px;
+  background-color: #f7f7f7; /* added a light gray background color */
+  padding: 20px;
+  border: 1px solid #ddd; /* added a light gray border */
+  border-radius: 10px; /* added a rounded corner */
+}
+
+.people .persons .person-1 img,
+.people .persons .person-2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #fff; /* added a white border around the image */
+}
+
+.people .persons .person-1 .name,
+.people .persons .person-2 .name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* changed the text color to a darker gray */
+}
+
+.people .persons .person-1 .role,
+.people .persons .person-2 .role {
+  font-size: 1.2rem;
+  color: #666; /* changed the text color to a darker gray */
+}
+
+@media (max-width: 768px) {
+  .people .persons .person-1,
+  .people .persons .person-2 {
+    width: 100%;
+  }
+}
